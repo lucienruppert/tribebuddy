@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: teal;
+  /* #008080 | rgb(0,128,128) */
+  --secondary: #FFD700; /* yellow */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: teal;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(255,255,255,255);
+}
+
+button {
+  background: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  @apply px-10 py-1 text-base rounded-lg cursor-pointer font-semibold tracking-wider;
+}
+
+button:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.mdc-snackbar__surface {
+  background-color: var(--secondary) !important;
+}
+
+.mdc-snackbar__label {
+  color: var(--primary) !important;
+  @apply text-center;
+}

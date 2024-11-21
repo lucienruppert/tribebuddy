@@ -1,0 +1,44 @@
+:host {
+  min-height: 100vh;
+  height: auto;
+  display: block;
+}
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  background: var(--primary);
+}
+
+mat-nav-list {
+  @apply flex flex-col w-44;
+  background: var(--primary);
+}
+
+mat-nav-list * {
+  @apply mb-4 text-start ml-5 pl-0 py-0;
+}
+
+mat-toolbar {
+  height: 60px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.brand {
+  @apply text-lg;
+}
+
+.active {
+  color: #FFD700;
+}
+
+button {
+  @apply px-3 py-3 text-sm font-normal;
+}

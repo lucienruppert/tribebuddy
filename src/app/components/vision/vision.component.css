@@ -1,0 +1,19 @@
+:host {
+  @apply flex flex-col items-center bg-white;
+  min-height: calc(100vh - 60px);
+  color: grey;
+}
+
+main {
+  @apply mt-10 w-1/2 mb-20;
+}
+
+@media (max-width: 768px) {
+  main {
+    @apply w-4/5;
+  }
+}
+
+.title {
+  color: var(--primary);
+}

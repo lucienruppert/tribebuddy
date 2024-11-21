@@ -1,0 +1,13 @@
+.close {
+  @apply text-center bg-white;
+  width: 100%;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: red;
+}
+

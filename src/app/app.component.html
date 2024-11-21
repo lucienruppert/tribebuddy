@@ -1,0 +1,75 @@
+<div>
+
+  <mat-toolbar>
+    <mat-toolbar-row>
+
+      <!-- <button
+        mat-icon-button
+        (click)="sidenav.toggle()"
+        fxShow="true"
+        fxHide.gt-sm
+      >
+        <mat-icon>menu</mat-icon>
+      </button> -->
+
+      <img
+        src="../assets/dot-circle.svg"
+        *ngIf="!isMobile"
+        class="mr-2 cursor-pointer"
+        routerLink="/"
+      />
+      <span routerLink="/" class="cursor-pointer brand"
+        >TribeBuddy</span
+      >
+      <span class="menu-spacer"></span>
+      <!-- <div fxShow="true" fxHide.lt-md>
+        <button routerLink="about" routerLinkActive="active">Rólam</button>
+        <button routerLink="vision" routerLinkActive="active">Vízió</button>
+        <button routerLink="method" routerLinkActive="active">Módszer</button>
+        <button routerLink="benefits" routerLinkActive="active">
+          Mire jó?
+        </button>
+        <button routerLink="services" routerLinkActive="active">
+          Szolgáltatások
+        </button>
+        <button routerLink="videos" routerLinkActive="active">Videók</button>
+        <button routerLink="events" routerLinkActive="active">Események</button>
+        <button routerLink="contact" routerLinkActive="active">
+          Kapcsolat
+        </button>
+      </div> -->
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+
+    <mat-sidenav #sidenav>
+
+      <!-- <mat-nav-list>
+        <button routerLink="about" (click)="sidenav.toggle()">Rólam</button>
+        <button routerLink="vision" (click)="sidenav.toggle()">Vízió</button>
+        <button routerLink="method" (click)="sidenav.toggle()">Módszer</button>
+        <button routerLink="benefits" (click)="sidenav.toggle()">
+          Mire jó?
+        </button>
+        <button routerLink="services" (click)="sidenav.toggle()">
+          Szolgáltatások
+        </button>
+        <button routerLink="videos" (click)="sidenav.toggle()">Videók</button>
+        <button routerLink="events" (click)="sidenav.toggle()">
+          Események
+        </button>
+        <button routerLink="contact" (click)="sidenav.toggle()">
+          Kapcsolat
+        </button>
+      </mat-nav-list> -->
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</div>

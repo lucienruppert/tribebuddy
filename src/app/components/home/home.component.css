@@ -1,0 +1,39 @@
+:host {
+  @apply flex flex-col items-center bg-white;
+  min-height: calc(100vh - 60px);
+  color: grey;
+}
+
+main {
+  @apply w-1/2;
+}
+
+img {
+  @apply float-end ml-5;
+}
+
+.title {
+  color: var(--primary);
+}
+
+a {
+  @apply cursor-pointer;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  main,
+  .title {
+    @apply w-4/5;
+  }
+  .title {
+    @apply text-2xl;
+  }
+  img {
+    @apply mb-5 float-none w-full ml-0;
+  }
+}
+
+/* * {
+  @apply border-2;
+} */
