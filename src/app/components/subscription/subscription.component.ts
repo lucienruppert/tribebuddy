@@ -19,9 +19,8 @@ export class SubscriptionComponent implements OnInit {
     if (this.email === '') return;
     let snackbarMessage: string = '';
     try {
-      console.log(this.email);
       await this.subscription.subscribe(this.email);
-      snackbarMessage = 'Az email hozzáadása sikerült.';
+      snackbarMessage = 'Feliratkozásod sikerült.';
       this.snackbar.showSnackBar(snackbarMessage);
       this.email = '';
     } catch (error: unknown) {
